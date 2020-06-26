@@ -1,0 +1,673 @@
+
+/* Start Navbar 
+***********************************************************************/
+.navbar {
+    border: none;
+}
+
+.navbar .brand {
+    width: 50px;
+    float: left;
+}
+
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.7) !important ; 
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus{
+    background-color: #FF8B38;
+}
+
+.navbar-nav > li > a {
+    padding: 15px;
+    font-weight: bold;
+    font-family: cursive;
+}
+/* End Navbar */
+
+
+/* Start Header 
+***********************************************************************/
+
+header {
+    background: url(../Img/hero-bg.jpg) no-repeat center center ;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    
+    header {
+        min-height: 850px;
+    }   
+    
+}
+
+
+@media (min-width: 992px){
+    header {
+        min-height: 610px;
+    }
+}
+
+
+header .centering {
+    margin: 25vh auto;
+}
+
+@media (max-width: 991px) {
+    
+    header .centering {
+        margin: 80px auto;
+    }   
+    
+}
+
+header h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+header span{
+    font-weight: normal;
+    color: #FF8B38;
+}
+
+header .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+}
+
+header .overlay .lead:after{
+    content: "";
+    width: 70px;
+    display: block;
+    height: 2px;
+    background-color: #FFF;
+    margin: 20px 0;
+}
+
+@media (max-width: 991px) {
+    
+    header .overlay .lead:after {
+        margin: 20px auto;
+    }
+    
+}
+
+header .overlay button{
+    background: transparent;
+    padding: 5px 15px;
+    margin-top: 20px;
+    border: 2px solid #FFF;
+}
+
+@media (max-width: 991px) {
+    
+    header .overlay button{
+        margin: 20px auto;
+        display: block;
+    }
+    
+}
+
+header .overlay button:hover{
+    background-color: #FF8B38;
+}
+
+header form{
+    width: 360px;
+    background-color: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+header form h2{
+    background-color: #F5F5F5;
+    color: #000;
+    padding: 10px;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+
+header form .form-control{
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #CCC;
+    margin: 0 auto 40px;
+    width: 90%;
+}
+
+header form .btn-block {
+    background-color: #FF8B38;
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: arial;
+}
+
+
+/* End Header */
+
+/* Start Social 
+***********************************************************************/
+.social {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: -2px -5px 13px #000;
+}
+
+.social h4 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cairo;
+    margin-top: 15px;
+}
+
+.social p {
+    color: #AAA;
+}
+
+.social i {
+    color: #aaa;
+    width: calc(100%/10);
+    margin: 30px 7px; 
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 991px){
+    .social i {
+        width: calc(100%/5);
+        margin: 30px 7px;
+    }
+}
+
+@media (min-width: 992px){
+    .social i {
+        margin: 30px 5px;
+    }
+}
+
+.social i:hover {
+    cursor: pointer;
+}
+.social .fa-facebook:hover {
+    color: #3b5998;
+}
+
+.social .fa-twitter:hover {
+    color: #1da1f2;
+}
+
+.social .fa-google-plus:hover {
+    color: #f13333;
+}
+
+.social .fa-pinterest:hover {
+    color: #bd081c;
+}
+
+.social .fa-instagram:hover {
+    color: #5851db;
+}
+
+.social .fa-autoprefixer:hover {
+    color: #076961;
+}
+
+.social .fa-codepen:hover {
+    color: #53565a;
+}
+
+.social .fa-linkedin:hover {
+    color: #003a84;
+}
+
+/* End Social */
+
+/* Start Tabs 
+***********************************************************************/
+
+.tabs {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+    margin-top: 5px;
+}
+
+.tabs .tab-switch li {
+    
+    color: #FFF;
+    background-color: #333;
+    border-bottom: 2px solid #FFF;
+    height: 100px;
+    line-height: 100px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: Tahoma;
+    cursor: pointer;
+}
+
+@media (max-width: 991px){
+    .tabs .tab-switch li {
+        height: 80px;
+        line-height: 80px;
+        font-size: 20px;
+        width: 200px;
+        margin: auto;
+    }
+}
+
+.tabs .tab-switch .selected {
+    background-color: #FF8B38;
+}
+
+.tabs .tab-switch li:hover {
+    background-color: #FF8B38;
+}
+
+.tabs .tabs-content div:not(.tab-content-1) {
+    display: none;
+}
+
+.tabs .tabs-content h3 {
+    font-family: monospace;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+
+.tabs .tabs-content p {
+    color: #AAA;
+    line-height: 1.5;
+}
+
+.tabs .tabs-content button {
+    background-color: #ff8b38;
+    color: #FFF;
+}
+
+.tabs .img img {
+    width: 100%;
+}
+/* End Tabs */
+
+/* Start Sublist 
+***********************************************************************/
+
+.sublist {
+    padding: 60px 0;
+}
+
+.sublist .img img{
+    padding: 3px;
+    border: 1px solid #AAA;
+    background-color: #FFF;
+}
+
+.sublist h3 {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: monospace;
+    margin-top: 0;
+}
+
+.sublist .list-icon i {
+    margin-right: 10px;
+    background-color: #FFF;
+    border: 1px solid #ff8b38;
+    color: #ff8b38;
+    border-radius: 15px;    
+    padding: 12px;
+    font-size: 20px;
+}
+
+.sublist .info p {
+    line-height: 1.7;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+
+/* End Sublist */
+
+/* Start Standard Picture
+***********************************************************************/
+
+.standard-pic {
+    padding: 60px 0 10px;
+    background-color: #EEE;
+}
+
+.standard-pic .img img{
+    padding: 3px;
+    border: 1px solid #AAA;
+    background-color: #FFF;
+}
+
+.standard-pic h3 {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: monospace;
+    margin-top: 0;
+}
+
+.standard-pic .info p {
+    line-height: 1.7;
+    color: #777;
+    margin-bottom: 40px;
+}
+/* End Standard Picture */
+
+
+/* Start Awesome 
+***********************************************************************/
+.awesome {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.awesome h2 {
+    font-family: Tahoma;
+    margin-bottom: 40px;
+}
+
+.awesome .main-p {
+   margin-bottom: 40px; 
+}
+
+.awesome i {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #ff8b38;
+    background-color: #FFF;
+    border: 2px solid #ff8b38;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.awesome h3 {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+.awesome p {
+    color: #777;
+}
+/* End Awesome */
+
+/* Start Prices 
+***********************************************************************/
+.prices {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #EEE;
+}
+
+.prices .main-p {
+    margin-bottom: 40px;
+    color: #777;
+}
+.prices .price-box {
+    background-color: #FFF;
+}
+
+.prices .price-box .plan-title {
+    background-color: #333;
+    padding: 20px 0;
+    margin: 0;
+    color: #FFF;
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+}
+
+.prices .price-box .price-div {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px 0 20px;
+}
+
+.prices .price-box .price-div .price {
+    font-size: 100px;
+    display: block;
+    font-weight: bold;
+    font-family: monospace;
+}
+.prices .price-box .price-div .price .usd {
+    font-size: 30px;
+}
+
+.prices .price-box .price-div .period {
+    color: #ccc;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.prices .price-box .price-div {
+    border-bottom: 5px solid #ff8b38;
+}
+
+.prices .price-box ul li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    color: #666;
+}
+
+.prices .price-box p {
+    color: #FFF;
+    background-color: #ff8b38;
+    padding: 5px 0 10px;
+    font-family: cursive;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.prices .basic,
+.prices .enterprise {
+    margin-top: 45px;
+}
+/* End Prices */
+
+
+/* Start Testimonials 
+***********************************************************************/
+
+.testimo {
+    padding: 60px 0;
+}
+
+.testimo .main-p {
+    margin-bottom: 30px;
+}
+
+.testimo .client-say {
+    background-color: #EEE;
+    color: #666;
+    padding: 15px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.testimo .client-say:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-style: solid;
+    border-width: 20px 20px 20px 20px;
+    border-color: #EEE transparent transparent transparent;
+    left: calc(50% - 40px);
+    bottom: -40px;
+}
+
+.testimo .img {
+    width: 64px;
+}
+
+.testimo .media-heading {
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.testimo .media {
+    margin-left: 40px;
+}
+
+.testimo .job {
+    font-size: 18px;
+    font-family: serif;
+}
+
+/* End Testimonials */
+
+/* Start Stylish 
+***********************************************************************/
+
+.stylish {
+    background: url(../Img/testimo.jpg) no-repeat center center ;
+    min-height: 320px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.stylish .overlay {
+    padding: 50px 0;
+}
+
+.stylish .overlay p {
+    margin: 30px 0;
+    color: #ccc;
+    font-size: 16px;
+}
+
+.stylish .overlay button {
+    background: transparent;
+    color: #FFF;
+    border-radius: 0;
+    border: 2px solid #FFF;
+}
+
+.stylish .head-border-center:after {
+    background-color: #FFF;
+}
+
+/* End Stylish */
+
+
+/* Start Contact Us
+***********************************************************************/
+
+.contact {
+    padding: 80px 0;
+}
+
+.contact p {
+    margin: 50px 0;
+    color: #ccc;
+    font-size: 16px;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"] {
+    margin-bottom: 10px;
+}
+
+.contact form textarea {
+    height: 158px;
+}
+
+.contact button {
+    background-color: #ff8b38;
+    color: #FFF;
+    margin: 10px auto;
+}
+
+/* End Contact Us */
+
+/* Start Footer
+***********************************************************************/
+
+footer {
+    padding-top: 30px;
+    background-color: #f5f5f5;
+    color: #5a4a42;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+
+footer span{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+/* End Footer */
+
+/*==================================================================================*/
+
+
+/* Start Framework 
+***********************************************************************/
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.head-border:after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    background-color: #ff8b38;
+    margin: 20px 0;
+}
+
+.head-border-center:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #ff8b38;
+    margin: 20px auto;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+}
+
+@media (max-width: 991px){
+    .text-center-xs {
+        text-align: center;
+    }
+}
+/*==================================================================================*/
+
